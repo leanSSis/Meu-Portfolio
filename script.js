@@ -29,7 +29,8 @@ if (formContato) {
   });
 }
 
-// BOTÃO DE TEMA (CLARO/ESCURO)
+//BOTÃO DE TEMA (CLARO/ESCURO)
+//fiz apenas a adição de um botão no canto direito da tela, que ira mudar o tema do site(claro/escuro)
 
 const botaoTema = document.getElementById("btn-tema");
 const iconeTema = document.getElementById("icone-tema");
@@ -40,12 +41,12 @@ if (localStorage.getItem("tema") === "escuro") {
   if (iconeTema) iconeTema.textContent = "☀️";
 }
 
-// Ativa a troca de tema ao clicar
+//Ativa a troca de tema ao clicar
 if (botaoTema) {
   botaoTema.addEventListener("click", () => {
     document.body.classList.toggle("dark-theme");
 
-    // Mudar ícone
+    //Mudar ícone
     const temaAtivo = document.body.classList.contains("dark-theme");
     if (iconeTema) iconeTema.textContent = temaAtivo ? "☀️" : "🌙";
 
