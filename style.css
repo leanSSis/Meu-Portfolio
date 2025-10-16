@@ -1,0 +1,54 @@
+/* MENU */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* LISTA DE LINKS */
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul.menu li a:hover,
+nav ul.menu li a.active {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* BOTÃO DE TEMA */
+#btn-tema {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+#btn-tema:hover {
+  transform: scale(1.2);
+}
+
+/* TEMA ESCURO */
+.dark-theme {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-theme nav {
+  background-color: #222;
+}
